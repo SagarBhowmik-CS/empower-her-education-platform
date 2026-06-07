@@ -1,0 +1,200 @@
+/* --- Global Styles & Variables (EmpowerHer Theme) --- */
+:root {
+    --primary-color: #6a1b9a;
+    --primary-dark: #4a148c;
+    --light-grey-bg: #f4f4f4;
+    --text-color: #555;
+    --heading-color: #333;
+    --border-color: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #e1bee7; /* Light purple background */
+    background: linear-gradient(to right, #f3e5f5, #e1bee7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- Main Container Styling --- */
+.container {
+    background: #fff;
+    width: 100%;
+    max-width: 450px;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+form {
+    margin: 0;
+}
+
+.form-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--heading-color);
+}
+
+/* --- Input Field Styling --- */
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+input {
+    width: 100%;
+    padding: 12px 12px 12px 45px; /* Add padding for the icon */
+    background-color: var(--light-grey-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(106, 27, 154, 0.2);
+}
+
+input:focus ~ i {
+    color: var(--primary-color);
+}
+
+/* Hiding the placeholder to let the label work */
+input::placeholder {
+    color: transparent;
+}
+
+/* Floating Label Animation */
+label {
+    color: #999;
+    position: absolute;
+    left: 45px;
+    top: 13px;
+    cursor: text;
+    transition: all 0.3s ease;
+    background-color: var(--light-grey-bg);
+    padding: 0 5px;
+}
+
+input:focus + label, input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 40px;
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* --- Links & Buttons --- */
+.recover {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.recover a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.recover a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 12px 0;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: var(--primary-dark);
+    transform: scale(1.02);
+}
+
+/* --- Social Login Section --- */
+.or {
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    color: #aaa;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons i {
+    color: var(--primary-color);
+    padding: 0.8rem;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.icons i:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* --- Sign In / Sign Up Link --- */
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 1rem;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+button {
+    color: var(--primary-color);
+    border: none;
+    background-color: transparent;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    text-decoration: underline;
+}

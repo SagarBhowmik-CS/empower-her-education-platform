@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechForward | Free Tech Courses & Certificates</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <style>
+
+        /* --- Basic Setup & Variables (Modern Teal Theme) --- */
+:root {
+    --primary-color: #14b8a6;   /* Main Teal */
+    --primary-dark: #0d9488;    /* Darker Teal for hover */
+    --light-bg: #f8fafc;        /* Clean, cool-toned background */
+    --card-bg: #ffffff;         /* White for cards */
+    --heading-color: #1e293b;   /* Dark Slate for headings */
+    --text-color: #475569;      /* Softer Slate for text */
+    --card-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    --card-border: #e2e8f0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Header & Hero Section --- */
+.hero {
+    background: var(--primary-color);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+/* --- Resource Grid Layout --- */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 0;
+}
+
+/* --- Card Styling --- */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin: 20px 0 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.card p {
+    flex-grow: 1;
+    margin-bottom: 25px;
+    color: var(--text-color);
+}
+
+/* --- Icon Styling --- */
+.card-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin: 0 auto 10px;
+    color: white;
+    background: var(--primary-color);
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* --- Button Styling --- */
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    background-color: #1e293b; /* Dark Slate to match heading color */
+    color: white;
+}
+
+
+    </style>
+
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>TechForward</h1>
+            <p>Your journey into tech starts here. Access free courses and certificates from world-class platforms.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="resource-grid">
+
+            <div class="card">
+                <div class="card-icon">🎓</div>
+                <h3>Coursera</h3>
+                <p>Offers free IT, programming, and computer science courses from top universities.</p>
+                <a href="https://www.coursera.org/courses?query=free" target="_blank" class="btn">Start Learning</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🏛️</div>
+                <h3>edX</h3>
+                <p>Find free computer science & IT courses from industry leaders like Harvard, MIT, and Microsoft.</p>
+                <a href="https://www.edx.org/" target="_blank" class="btn">Start Learning</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Harvard CS50</h3>
+                <p>Take Harvard’s renowned introduction to Computer Science for free, with a certificate option.</p>
+                <a href="https://cs50.harvard.edu/" target="_blank" class="btn">Start Learning</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">🚀</div>
+                <h3>Google Digital Garage</h3>
+                <p>Access free courses in IT, coding, and cybersecurity with official Google certificates.</p>
+                <a href="https://learndigital.withgoogle.com/digitalgarage/" target="_blank" class="btn">Start Learning</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🧠</div>
+                <h3>IBM SkillsBuild</h3>
+                <p>Get job-ready skills with free courses in AI, Cloud, Cybersecurity, and Software Development.</p>
+                <a href="https://www.skillsbuild.org/" target="_blank" class="btn">Start Learning</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">☁️</div>
+                <h3>Microsoft Learn</h3>
+                <p>Explore free, hands-on learning paths for Azure, AI, and Software Development tools.</p>
+                <a href="https://learn.microsoft.com/en-us/" target="_blank" class="btn">Start Learning</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🌐</div>
+                <h3>Cisco Networking Academy</h3>
+                <p>Learn in-demand skills with free networking, cybersecurity, and IT essentials courses.</p>
+                <a href="https://www.netacad.com/" target="_blank" class="btn">Start Learning</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h3>Kaggle Learn</h3>
+                <p>Dive into data science with short, practical courses in Python, Machine Learning, and AI.</p>
+                <a href="https://www.kaggle.com/learn" target="_blank" class="btn">Start Learning</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 TechForward. Designed with passion.</p>
+    </footer>
+
+</body>
+</html>

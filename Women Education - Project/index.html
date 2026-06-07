@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function searchFunction() {
+        let query = document.getElementById("searchBox").value.toLowerCase();
+        if (query.includes("cs") || query.includes("it") || query.includes("tech")) {
+            window.location.href = "techWebsite.html"; // Replace with actual file/link of Program B
+        } else {
+            alert("No results found! Try searching for CS, IT, or Tech.");
+        }
+    }
+</script>
+</head>
+<body>
+  
+  <style>
+    .search-container {
+        text-align: center;
+        margin: 30px 0;
+        padding: 15px;
+    }
+
+    #searchBox {
+        width: 350px;
+        padding: 12px;
+        border: 2px solid #ccc;
+        border-radius: 30px;
+        outline: none;
+        font-size: 18px;
+        transition: 0.3s ease-in-out;
+        background: #f9f9f9;
+        color: black;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #searchBox::placeholder {
+        color: #999;
+    }
+
+    #searchBox:focus {
+        border: 2px solid #007bff;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+
+    #searchButton {
+        padding: 12px 25px;
+        border: none;
+        background: linear-gradient(45deg, #007bff, #0056b3);
+        color: white;
+        font-size: 18px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    #searchButton:hover {
+        background: linear-gradient(45deg, #0056b3, #007bff);
+        transform: scale(1.05);
+        box-shadow: 0 0 12px rgba(0, 123, 255, 0.5);
+    }
+
+    /* Background Styling */
+    body {
+        background: white;
+        font-family: Arial, sans-serif;
+        color: black;
+    }
+  </style>
+
+<div class="search-container">
+    <input type="text" id="searchBox" placeholder="🔍 Search Tech Courses...">
+    <button id="searchButton" onclick="searchFunction()">Search</button>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerHer | Free Educational Resources for Women</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="styles.css" rel="stylesheet">
+
+
+
+<script>
+    function searchFunction() {
+        let query = document.getElementById("searchBox").value.toLowerCase();
+        if (query.includes("cs") || query.includes("it") || query.includes("tech")) {
+            window.location.href = "techWebsite.html"; // Replace with actual file/link of Program B
+        } else {
+            alert("No results found! Try searching for CS, IT, or Tech.");
+        }
+    }
+</script>
+
+
+
+    
+    <!-- For decoration: -->
+    <style>
+
+        /* --- Basic Setup & Variables --- */
+:root {
+    --primary-color: #6a1b9a; /* Deep Purple */
+    --secondary-color: #f3e5f5; /* Light Lavender */
+    --dark-grey: #333;
+    --light-grey: #f4f4f4;
+    --text-color: #555;
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.search-container {
+        text-align: center;
+        margin: 30px 0;
+        padding: 15px;
+    }
+
+    #searchBox {
+        width: 350px;
+        padding: 12px;
+        border: 2px solid #ccc;
+        border-radius: 30px;
+        outline: none;
+        font-size: 18px;
+        transition: 0.3s ease-in-out;
+        background: #f9f9f9;
+        color: black;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #searchBox::placeholder {
+        color: #999;
+    }
+
+    #searchBox:focus {
+        border: 2px solid #007bff;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+
+    #searchButton {
+        padding: 12px 25px;
+        border: none;
+        background: linear-gradient(45deg, #007bff, #0056b3);
+        color: white;
+        font-size: 18px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    #searchButton:hover {
+        background: linear-gradient(45deg, #0056b3, #007bff);
+        transform: scale(1.05);
+        box-shadow: 0 0 12px rgba(0, 123, 255, 0.5);
+    }
+
+    /* Background Styling */
+    body {
+        background: white;
+        font-family: Arial, sans-serif;
+        color: black;
+    }
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-grey);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Header & Hero Section --- */
+.hero {
+    background: linear-gradient(to right, var(--primary-color), #8e24aa);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* --- Resource Grid Layout --- */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 40px 0;
+}
+
+/* --- Card Styling --- */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.card p {
+    flex-grow: 1; /* Ensures text takes up space, pushing button to bottom */
+    margin-bottom: 20px;
+}
+
+/* --- Button Styling --- */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4a148c; /* Darker Purple */
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--dark-grey);
+    color: white;
+    margin-top: 40px;
+}
+
+    </style>
+
+</head>
+<body>
+
+    <header class="hero">   
+       <div class="hero-content">
+            <h1>EmpowerHer</h1>
+            <p>Your gateway to free online educational resources, curated for women.</p>
+        </div>
+    </header>
+
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="🔍 Search Tech Courses...">
+            <button id="searchButton" onclick="searchFunction()">Search</button>
+            <center><p> <b><i> ( Search = IT, CS or Tech )</i></b> </p>  </center>
+        </div>
+
+    <main class="container">
+        <div class="resource-grid">
+            
+            <div class="card">
+                <h3>SWAYAM</h3>
+                <p>Government of India’s platform for free online courses across multiple subjects.</p>
+                <a href="https://pmevidya.education.gov.in/swayam-portal.html" target="_blank" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <h3>National Digital Library of India</h3>
+                <p>Millions of books, journals, and educational resources for all learners.</p>
+                <a href="https://www.ndl.gov.in" target="_blank" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <h3>Skill India Digital Hub</h3>
+                <p>Free courses on IT, digital marketing, AI, and other professional skills.</p>
+                <a href="https://www.skillindiadigital.gov.in/" target="_blank" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <h3>Glow & Lovely Careers</h3>
+                <p>Free career guidance and skill development courses specifically for women.</p>
+                <a href="https://www.glowandlovelycareers.in/en" target="_blank" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <h3>Unacademy</h3>
+                <p>Access thousands of free live classes and courses for various subjects.</p>
+                <a href="https://unacademy.com" target="_blank" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <h3>Khan Academy</h3>
+                <p>A non-profit offering free courses in math, science, and humanities for all ages.</p>
+                <a href="https://www.khanacademy.org" target="_blank" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <h3>OpenStax</h3>
+                <p>Provides free, high-quality, peer-reviewed textbooks for higher education.</p>
+                <a href="https://openstax.org" target="_blank" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <h3>Coursera</h3>
+                <p>Offers many free university-level courses from top global institutions.</p>
+                <a href="https://www.coursera.org" target="_blank" class="btn">Visit Site</a>
+            </div>
+            
+            <div class="card">
+                <h3>edX</h3>
+                <p>Access 2000+ free online courses from institutions like Harvard, MIT, and more.</p>
+                <a href="https://www.edx.org" target="_blank" class="btn">Visit Site</a>
+            </div>
+
+            </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 EmpowerHer. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
